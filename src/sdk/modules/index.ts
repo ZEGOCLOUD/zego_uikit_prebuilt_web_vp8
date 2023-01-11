@@ -1110,11 +1110,10 @@ export class ZegoCloudRTCCore {
         extraInfo,
       };
     }
-    const res = ZegoCloudRTCCore._zg.startPublishingStream(
-      streamID,
-      media,
-      publishOption
-    );
+    const res = ZegoCloudRTCCore._zg.startPublishingStream(streamID, media, {
+      ...publishOption,
+      ...{ videoCodec: "VP8" },
+    });
     return res && streamID;
   }
 

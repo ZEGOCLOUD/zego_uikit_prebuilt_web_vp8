@@ -159,8 +159,8 @@ export default class App extends React.PureComponent {
           userName || getRandomName()
         );
         // let token = ZegoUIKitPrebuilt.generateKitTokenForTest(
-        //   1484647939,
-        //   "22076fd0a8388f31dc1f6e344171****",
+        //   252984006,
+        //   "16435f3bdb307f3020b3f9e4259a29f0",
         //   roomID,
         //   randomNumID(8),
         //   userName || getRandomName(),
@@ -217,7 +217,7 @@ export default class App extends React.PureComponent {
             ZegoUIKitPrebuilt.VideoResolution_480P,
             ZegoUIKitPrebuilt.VideoResolution_720P,
           ],
-          videoResolutionDefault: ZegoUIKitPrebuilt.VideoResolution_360P,
+          videoResolutionDefault: ZegoUIKitPrebuilt.VideoResolution_720P,
           onLiveStart: (user) => {
             console.warn("onLiveStart", user);
           },
